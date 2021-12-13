@@ -1,8 +1,13 @@
 <h1>Recipes</h1>
 
 <% @recipes.each do |recipe| %>
-<p><%= recipe.name %><p>
-<p><a href="/recipes/<%= recipe.id %>">Recipe Link</a></p>
-<% end %>
+<h3><%= recipe.name %><h3>
+<p><em><a href="/recipes/<%= recipe.id %>"><h4>recipe</h4></a></em></p>
+
+<% end %><br>
+
+
+<p><em><a href="/recipes/new">New Recipe Form</a></p></em>
+
 
 
